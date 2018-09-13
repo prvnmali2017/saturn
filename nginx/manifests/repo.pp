@@ -1,4 +1,7 @@
 class nginx::repo {
+   package { 'git':
+         ensure => present,
+   }
    vcsrepo { '/home/blake/code/saturn':
      ensure   => latest,
      provider => git,
