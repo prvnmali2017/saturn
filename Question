@@ -1,0 +1,41 @@
+Technical Challenge - Automate the installation and configuration of nginx web server
+
+REQUIREMENTS:
+
+The nginx server must:
+
+(a) serve requests over port 8000
+(b) serve a page with the content of the following repository: https://github.com/puppetlabs/exercise-webpage (page from the repository must be served locally)
+
+Your solution should:
+
+(i) ensure that the required configuration is completed reliably when all the steps are completed
+(ii) ensure that subsequent applications of the solution do not cause failures or repeat redundant configuration tasks
+(iii) ensure that each execution of the solution results in nginx serving the latest available content from the repository linked above
+
+ 
+
+Please perform this exercise on one of the following operating systems: CentOS/RHEL (6 or 7), Ubuntu (14.04 or 16.04), or Windows Server 2012R2. We will likely use a vagrant box to review your solution. If you prefer, you can use one of the vagrant boxes located here:
+
+https://atlas.hashicorp.com/boxes/search
+https://atlas.hashicorp.com/puppetlabs
+
+ 
+
+You can complete this exercise using your choice of automation tool or language. You do not need to produce a Puppet language solution. The emphasis should be on a working solution that satisfies the requirements.
+
+ 
+
+Please attach:
+
+(1) Your code solution in the file format in which it is expected to run. Submissions that cannot be executed as delivered will likely be disqualified.
+(2) A brief paragraph explaining the steps required to apply your solution.  Please explicitly state all assumptions (e.g. Only runs on RHEL6)
+(3) Answers to the following questions. Limit your answers to 1-2 Pages.
+
+Questions:
+
+Describe the most difficult/painful hurdle you had to overcome in implementing your solution.
+Please explain why requirement (ii) above might be important.
+Where did you go to find information to help you in the build process?
+Briefly explain what automation means to you, and why it is important to an organization's infrastructure design strategy.
+Have fun and good luck. We look forward to receiving your completed tasks.

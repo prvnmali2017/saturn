@@ -1,2 +1,2 @@
-include nginx
 include nginx::repo
+include nginx

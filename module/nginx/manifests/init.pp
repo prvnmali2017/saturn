@@ -1,34 +1,34 @@
 class nginx {
      require nginx::repo
      File {
-         owner => 'root',
-         group => 'root',
-         mode  => '0644',
+         owner   => 'root',
+         group   => 'root',
+         mode    => '0644',
       }
       package { 'nginx':
-         ensure => present, 
+         ensure  =>  present, 
       }
       file { '/var/www': 
-         ensure => directory, 
+         ensure  =>  directory, 
       }
       file { '/var/www/index.html':
-         ensure => file,
-         source => 'file:/home/blake/code/saturn/index.html',
+         ensure  =>  file,
+         source  => 'file:/home/blake/code/saturn/index.html',
       }
       file { '/etc/nginx/nginx.conf':
-         ensure => file,
+         ensure  =>  file,
          source  => 'puppet:///modules/nginx/nginx.conf',
-         require => Package['nginx'],
-         notify  => Service['nginx'],
+         require =>  Package['nginx'],
+         notify  =>  Service['nginx'],
        }
       file { '/etc/nginx/sites-enabled/default':
-         ensure  => file,
+         ensure  =>  file,
          source  => 'puppet:///modules/nginx/default.conf',
          require =>  Package['nginx'],
-         notify  => Service['nginx'],
+         notify  =>  Service['nginx'],
       }
       service { 'nginx':
-        ensure => running,
-        enable => true,
+         ensure  =>  running,
+         enable  =>  true,
       } 
 }
