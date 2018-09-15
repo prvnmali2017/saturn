@@ -13,7 +13,7 @@ class nginx {
       }
       file { '/var/www/index.html':
          ensure  =>  file,
-         source  => 'file:/home/blake/code/saturn/index.html',
+         source  => 'file:/etc/puppetlabs/code/exercise-webpage/index.html',
       }
       file { '/etc/nginx/nginx.conf':
          ensure  =>  file,

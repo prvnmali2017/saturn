@@ -9,10 +9,10 @@ class nginx::repo {
      ensure   => installed,
      require  => Exec['apt-get update'],
    }
-   vcsrepo { '/home/blake/code/saturn':
+   vcsrepo { '/etc/puppetlabs/code/exercise-webpage':
      ensure   => latest,
      provider => git,
-     source   => 'https://github.com/prvnmali2017/saturn.git',
+     source   => 'https://github.com/puppetlabs/exercise-webpage',
      revision => 'master',
    }
 }
