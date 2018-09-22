@@ -1,6 +1,10 @@
 version  '2'
 volumes:
    tolmach-new:
+<<<<<<< HEAD
      external: true
+=======
+     external: false
+>>>>>>> bob_branch
 services:
     image: postgres:v1.0
