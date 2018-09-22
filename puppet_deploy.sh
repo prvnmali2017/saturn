@@ -140,4 +140,5 @@ export PATH=/opt/puppetlabs/bin:$PATH
 puppet module install puppetlabs-vcsrepo --version 2.3.0
 ###Changing the permissions on destination directory to copy the nginx module from local host to vagrant machine
 chmod 777 /etc/puppetlabs/code/environments/production/modules
+echo "Puppet agent is running"
 exit 0
