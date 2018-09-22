@@ -1,0 +1,6 @@
+version  '2'
+volumes:
+   tolmach-new:
+     external: false
+services:
+    image: postgres:v1.0
